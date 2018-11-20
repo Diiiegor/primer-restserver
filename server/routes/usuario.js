@@ -12,7 +12,7 @@ app.get('/usuario', function (req, res) {
     let limite=req.query.limite || 5;
     limite= Number(limite)
 
-    Usuario.find({})
+    Usuario.find({},"role estado google nombre email img")
         .skip(desde)
         .limit(limite)
         .exec((error, usuarios) => {
@@ -23,9 +23,20 @@ app.get('/usuario', function (req, res) {
                 })
             }
 
-            res.json({
-                ok: true,
-                usuarios
+            Usuario.count({},(error,conteo)=>{
+
+                if (error) {
+                    return res.status(400).json({
+                        ok: false,
+                        mensaje: error
+                    })
+                }
+
+                res.json({
+                    ok: true,
+                    usuarios,
+                    cuantos:conteo
+                })
             })
 
         })
