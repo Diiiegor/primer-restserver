@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f9077ddb-8036-4dc1-b550-f9f6e26e7a1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/usuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,46 +53,55 @@
     <session id="-444302062">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="10" />
+          <entry key="js" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="99" />
+          <entry key="js" value="512" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="99" />
+          <entry key="JavaScript" value="512" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/routes/usuario.js">
+        <entry file="file://$PROJECT_DIR$/server/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="361">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding>
-                <element signature="e#763#1325#0" />
-                <element signature="e#1372#1819#0" />
-                <element signature="e#1861#1895#0" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -100,6 +111,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>rolesValidos</find>
+      <find>findByIdAndUpdate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,6 +121,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server/routes/usuario.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/config/config.js" />
       </list>
     </option>
   </component>
@@ -138,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,6 +163,12 @@
               <item name="06-restserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="06-restserver" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="06-restserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="06-restserver" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="06-restserver" type="b2602c69:ProjectViewProjectNode" />
@@ -167,6 +186,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,12 +224,14 @@
       <workItem from="1542141720423" duration="646000" />
       <workItem from="1542163452715" duration="1787000" />
       <workItem from="1542676316802" duration="675000" />
-      <workItem from="1542678878927" duration="3560000" />
+      <workItem from="1542678878927" duration="3805000" />
+      <workItem from="1542915679670" duration="2368000" />
+      <workItem from="1543198762805" duration="2326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10326000" />
+    <option name="totallyTimeSpent" value="15265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -230,7 +252,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32718122" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.68903434" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -243,40 +265,39 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/config/config.js">
+    <entry file="file://$PROJECT_DIR$/server/models/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="458">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1111#1673#0" />
+            <element signature="e#1395#1668#0" />
+            <element signature="e#1720#2163#0" />
+            <element signature="e#2213#2791#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="67" />
+        <state relative-caret-position="154">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/usuario.js">
+    <entry file="file://$PROJECT_DIR$/server/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        <state relative-caret-position="361">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
-            <element signature="e#266#919#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/usuario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#763#1325#0" />
-            <element signature="e#1372#1819#0" />
-            <element signature="e#1861#1895#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

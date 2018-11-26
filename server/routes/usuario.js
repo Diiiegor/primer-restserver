@@ -6,13 +6,17 @@ const Usuario = require('../models/usuario');
 
 app.get('/usuario', function (req, res) {
 
-    let desde=req.query.desde || 0;
-    desde=Number(desde);
+    let desde = req.query.desde || 0;
+    desde = Number(desde);
 
-    let limite=req.query.limite || 5;
-    limite= Number(limite)
+    let limite = req.query.limite || 5;
+    limite = Number(limite);
 
-    Usuario.find({},"role estado google nombre email img")
+    let condiciones={
+        estado:true
+    };
+
+    Usuario.find(condiciones, "role estado google nombre email img")
         .skip(desde)
         .limit(limite)
         .exec((error, usuarios) => {
@@ -23,7 +27,7 @@ app.get('/usuario', function (req, res) {
                 })
             }
 
-            Usuario.count({},(error,conteo)=>{
+            Usuario.count(condiciones, (error, conteo) => {
 
                 if (error) {
                     return res.status(400).json({
@@ -35,7 +39,7 @@ app.get('/usuario', function (req, res) {
                 res.json({
                     ok: true,
                     usuarios,
-                    cuantos:conteo
+                    cuantos: conteo
                 })
             })
 
@@ -90,8 +94,30 @@ app.put('/usuario/:id', function (req, res) {
     })
 
 });
-app.delete('/usuario', function (req, res) {
-    res.json('delete usuario')
+app.delete('/usuario/:id', function (req, res) {
+    let id = req.params.id;
+    //Usuario.findByIdAndRemove(id,(error,usuarioEliminado)=>{
+    let cambioEstado = {estado: false};
+    Usuario.findByIdAndUpdate(id, cambioEstado, {new: true}, (error, usuarioEliminado) => {
+        if (error) {
+            return res.status(400).json({
+                ok: false,
+                mensaje: err
+            })
+        }
+
+        if (usuarioEliminado == null) {
+            return res.status(400).json({
+                ok: false,
+                mensaje: 'usuario no encontrado'
+            })
+        }
+
+        res.json({
+            ok: true,
+            usuario: usuarioEliminado
+        })
+    });
 });
 
 module.exports = app;
