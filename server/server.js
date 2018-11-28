@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 //importo las rutas
-app.use(require('./routes/usuario'));
+app.use(require('./routes/index'));
 
 //conexion a mongodb
 mongoose.connect(process.env.URLDB,{ useNewUrlParser: true },(error, res)=>{
