@@ -11,7 +11,7 @@ let verificaToken=(req,res,next)=>{
         if (err){
             return res.status(401).json({
                 ok:false,
-                mensaje:err
+                mensaje: 'Token no valido'
             })
         }
 
@@ -20,6 +20,23 @@ let verificaToken=(req,res,next)=>{
     })
 };
 
+//=====================
+//VERIFICAR ADMIN_ROLE
+//======================
+let verificaAdmin_role=(req,res,next)=>{
+    let usuario=req.usuario;
+    if (usuario.role=='USER_ROLE'){
+        return res.status(401).json({
+            ok:false,
+            mensaje: 'EL usuario no es administrador'
+        })
+    }
+
+    next();
+    
+}
+
 module.exports={
-    verificaToken
+    verificaToken,
+    verificaAdmin_role
 };

@@ -3,7 +3,7 @@ const app = express();
 const bcrypt = require('bcrypt');
 const _ = require('underscore');
 const Usuario = require('../models/usuario');
-const {verificaToken}=require('../middlewares/autenticacion');
+const {verificaToken,verificaAdmin_role}=require('../middlewares/autenticacion');
 
 app.get('/usuario',verificaToken, function (req, res) {
 
@@ -46,7 +46,7 @@ app.get('/usuario',verificaToken, function (req, res) {
 
         })
 });
-app.post('/usuario', function (req, res) {
+app.post('/usuario',[verificaToken,verificaAdmin_role], function (req, res) {
     let body = req.body;
 
     let usuario = new Usuario({
@@ -74,7 +74,7 @@ app.post('/usuario', function (req, res) {
     });
 
 });
-app.put('/usuario/:id', function (req, res) {
+app.put('/usuario/:id',[verificaToken,verificaAdmin_role], function (req, res) {
     let id = req.params.id;
     let body = _.pick(req.body, ['nombre', 'email', 'img', 'role', 'estado']);
 
@@ -95,7 +95,7 @@ app.put('/usuario/:id', function (req, res) {
     })
 
 });
-app.delete('/usuario/:id', function (req, res) {
+app.delete('/usuario/:id',[verificaToken,verificaAdmin_role], function (req, res) {
     let id = req.params.id;
     //Usuario.findByIdAndRemove(id,(error,usuarioEliminado)=>{
     let cambioEstado = {estado: false};
