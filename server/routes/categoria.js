@@ -48,7 +48,6 @@ app.get('/categoria',verificaToken,(req,res)=>{
         })
 });
 
-
 //mostrar una categoria por id
 app.get('/categoria/:id',verificaToken,(req,res)=>{
     let id = req.params.id;
@@ -68,11 +67,12 @@ app.get('/categoria/:id',verificaToken,(req,res)=>{
 });
 
 //crear una nueva categoria y la regresa
-app.post('/categoria',(req,res)=>{
+app.post('/categoria',verificaToken,(req,res)=>{
     let body=req.body;
 
     let categoria=new Categoria({
-        nombre:body.nombre
+        nombre:body.nombre,
+        usuario:req.usuario._id
     })
 
     categoria.save((error,categoriaDb)=>{

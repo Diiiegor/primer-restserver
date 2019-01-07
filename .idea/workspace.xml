@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9077ddb-8036-4dc1-b550-f9f6e26e7a1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/usuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/categoria.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/categoria.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/categoria.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/categoria.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +24,18 @@
               <folding>
                 <element signature="e#309#1245#0" />
                 <element signature="e#1289#1851#0" />
+                <element signature="e#1933#2376#0" />
                 <element signature="e#2461#3114#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/middlewares/autenticacion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -34,14 +43,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/routes/categoria.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state relative-caret-position="279">
+              <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
               <folding>
                 <element signature="e#269#277#0" />
                 <element signature="e#1170#1178#0" />
-                <element signature="e#413#796#0" />
                 <element signature="e#2037#2045#0" />
+                <element signature="e#2572#2580#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/categoria.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -74,6 +92,7 @@
         <option value="$PROJECT_DIR$/server/middlewares/autenticacion.js" />
         <option value="$PROJECT_DIR$/server/routes/usuario.js" />
         <option value="$PROJECT_DIR$/server/routes/index.js" />
+        <option value="$PROJECT_DIR$/server/models/categoria.js" />
         <option value="$PROJECT_DIR$/server/routes/categoria.js" />
       </list>
     </option>
@@ -106,6 +125,18 @@
               <item name="primer-restserver" type="b2602c69:ProjectViewProjectNode" />
               <item name="primer-restserver" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="primer-restserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="primer-restserver" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="primer-restserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="primer-restserver" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="primer-restserver" type="b2602c69:ProjectViewProjectNode" />
@@ -163,12 +194,12 @@
       <workItem from="1545790114208" duration="1240000" />
       <workItem from="1545791875820" duration="4270000" />
       <workItem from="1545875559929" duration="2862000" />
-      <workItem from="1546811347102" duration="5385000" />
+      <workItem from="1546811347102" duration="7848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33805000" />
+    <option name="totallyTimeSpent" value="36268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="1315" height="743" extended-state="6" />
@@ -231,13 +262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/middlewares/autenticacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -263,8 +287,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/categoria.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="207">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middlewares/autenticacion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -275,6 +306,7 @@
           <folding>
             <element signature="e#309#1245#0" />
             <element signature="e#1289#1851#0" />
+            <element signature="e#1933#2376#0" />
             <element signature="e#2461#3114#0" />
           </folding>
         </state>
@@ -282,13 +314,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/categoria.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="279">
+          <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
           <folding>
             <element signature="e#269#277#0" />
             <element signature="e#1170#1178#0" />
-            <element signature="e#413#796#0" />
             <element signature="e#2037#2045#0" />
+            <element signature="e#2572#2580#0" />
           </folding>
         </state>
       </provider>
