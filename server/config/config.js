@@ -35,3 +35,5 @@ else {
     urlDb = 'mongodb://cafe-user:didra990@ds259079.mlab.com:59079/cafe';
 }
 process.env.URLDB = urlDb;
+
+process.env.CLIENT_ID=process.env.CLIENT_ID||'941965223976-hrnrbag73pmj9luud7ca93l5pevt8ag6.apps.googleusercontent.com'
