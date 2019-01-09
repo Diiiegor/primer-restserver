@@ -51,15 +51,84 @@ async function verify(token) {
         audience: process.env.CLIENT_ID,
     });
     const payload = ticket.getPayload();
-   console.log(payload)
-}
-app.post('/google', (req, res) => {
-    let token = req.body.idtoken;
 
-    verify(token)
+    return{
+        nombre:payload.name,
+        email:payload.email,
+        img:payload.picture,
+        google:true
+    }
+
+}
+app.post('/google', async (req, res) => {
+    let token = req.body.idtoken;
+    let googleUser=await verify(token)
+        .catch(error=>{
+            return res.status(403).json({
+                ok:false,
+                mensaje:error
+            })
+        })
+
+    Usuario.findOne({email:googleUser.email},(err,usuarioDb)=>{
+        if (err) {
+            return res.status(500).json({
+                ok: false,
+                mensaje: err
+            })
+        }
+        
+        if (usuarioDb){
+            if (usuarioDb.google==false) {
+                return res.status(400).json({
+                    ok: false,
+                    mensaje: 'Debe usar su autenticacion normal'
+                })
+            }
+            else{
+                let token = jwt.sign({
+                    usuario: usuarioDb
+                }, process.env.SEED, {expiresIn: process.env.CADUCIDAD_TOKEN});
+
+                return res.json({
+                    ok:true,
+                    usuario:usuarioDb,
+                    token
+                })
+            }
+        }
+        else{
+            let usuario=new Usuario();
+            usuario.nombre=googleUser.nombre;
+            usuario.email=googleUser.email;
+            usuario.img=googleUser.img;
+            usuario.role='USER_ROLE';
+            usuario.google=true;
+            usuario.password=':)';
+
+            usuario.save((err,usuarioDb)=>{
+                if (err){
+                    res.status(500).json({
+                        ok:false,
+                        mensaje:err
+                    })
+                }
+
+                let token = jwt.sign({
+                    usuario: usuarioDb
+                }, process.env.SEED, {expiresIn: process.env.CADUCIDAD_TOKEN});
+
+                return res.json({
+                    ok:true,
+                    usuario:usuarioDb,
+                    token
+                })
+            })
+        }
+    })
 
     res.json({
-        token
+        usuario:googleUser
     })
 })
 
