@@ -20,6 +20,7 @@ app.get('/categoria',verificaToken,(req,res)=>{
     Categoria.find()
         .skip(desde)
         .limit(limite)
+        .populate('usuario','nombre email')
         .exec((error,categorias)=>{
 
             if (error) {
