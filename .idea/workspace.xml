@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f9077ddb-8036-4dc1-b550-f9f6e26e7a1d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/producto.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/producto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/archivo.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="120" column="35" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!block;n#imagenUsuario#0" />
+                <element signature="e#1762#2482#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/models/producto.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -60,6 +73,7 @@
         <option value="$PROJECT_DIR$/server/routes/producto.js" />
         <option value="$PROJECT_DIR$/server/routes/index.js" />
         <option value="$PROJECT_DIR$/server/routes/upload.js" />
+        <option value="$PROJECT_DIR$/server/models/producto.js" />
       </list>
     </option>
   </component>
@@ -79,6 +93,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,13 +122,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spotiapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -168,16 +182,18 @@
       <workItem from="1548461669999" duration="1403000" />
       <workItem from="1548557276080" duration="32000" />
       <workItem from="1550460363639" duration="1913000" />
+      <workItem from="1550547231503" duration="1114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64097000" />
+    <option name="totallyTimeSpent" value="65211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29062957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29062957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -192,7 +208,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.6942149" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6937799" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -290,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/producto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/categoria.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -326,22 +335,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uploads/archivo.jpg" />
     <entry file="file://$PROJECT_DIR$/uploads/nature-tree-green-pine.jpg" />
-    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-660.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-748.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-121.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-660.jpg" />
+    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-748.jpg" />
+    <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-121.jpg" />
     <entry file="file://$PROJECT_DIR$/uploads/usuarios/5c243476eb09bc04789e45c7-962.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="152">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!block;n#imagenUsuario#0" />
+            <element signature="e#1762#2482#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/producto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
