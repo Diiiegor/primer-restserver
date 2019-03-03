@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9077ddb-8036-4dc1-b550-f9f6e26e7a1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/middlewares/autenticacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/autenticacion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/imagenes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/imagenes.js" afterDir="false" />
-    </list>
+    <list default="true" id="f9077ddb-8036-4dc1-b550-f9f6e26e7a1d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -137,7 +134,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spotiapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -201,16 +198,15 @@
       <workItem from="1550711820961" duration="22000" />
       <workItem from="1550720063902" duration="1134000" />
       <workItem from="1550981578172" duration="1204000" />
-      <workItem from="1551034193079" duration="2444000" />
+      <workItem from="1551034193079" duration="3046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70166000" />
+    <option name="totallyTimeSpent" value="70768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.284041" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
